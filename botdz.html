@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let result = 0
+        let question1 = prompt('это тест На сколько вы Усольцев Данила из 171р, хотите ли вы пройти тест? 1 - да 2 - нет')
+        switch(question1) {
+            case 1:
+                alert("да");
+                break;
+            case 2:
+                alert("нет");
+                break;
+                }
+                if(question1 == 1) {
+                    result += 5
+                }
+                else if(question1 == 2) {
+                    result += 0
+                }
+                else if(question1 == null) {
+                    alert("пока")
+                    end
+                }
+        let question2 = prompt("зачем вы ходите на пары? 1 - по рофлу 2 - пообщаться 3 - стать проф. веб разработчиком и пойти работать в google 4 - учиться")
+        switch(question2) {
+            case 1:
+                alert("по рофлу");
+                break;
+            case 2:
+                alert("пообщаться");
+                break;
+            case 3:
+                alert("стать проф. веб разработчиком и пойти работать в google");
+                break;
+            case 4:
+                alert("учиться");
+                break;
+            }
+        if(question2 == 3) {
+            result += 2
+        }
+        else if(question2 == 4) {
+            result += 5
+        }
+        else if(question2 == null) {
+                    alert("пока")
+                    end
+        }            
+        else {
+            result += 0
+        }
+        let question3 = prompt("выберите фильм 1 - великий гетсби 2 - мстители (2012г) 3 - не грози южному централу попивая сок у себя в квартале 4 - поезд в пусан 5 - не смотрю фильмы")
+        switch(question3) {
+            case 1:
+                alert("великий гетсби");
+                break;
+            case 2:
+                alert("мстители (2012г)");
+                break;
+            case 3:
+                alert("не грози южному централу попивая сок у себя в квартале");
+                break;
+            case 4:
+                alert("поезд в пусан");
+                break;  
+            case 5:
+                alert("не смотрю фильмы");
+                break;
+        }
+        if(question3 == 3) {
+            result += 5
+        }
+        else if(question3 == 5) {
+            result -= 2
+        }    
+        else if(question3 == null) {
+                    alert("пока")
+                    end         
+        }
+        else {
+            result += 3
+        }
+        question4 = prompt("как вы готовитесь к экзамену/контрольной? 1 - забиваю болт 2 - тчательно готовлюсь 3 - зависит от настроения 4 - за 5мин до экзамена/контрольной читаю молитву")
+        switch(question4) {
+            case 1:
+                alert("забиваю болт");
+                break;
+            case 2:
+                alert("тчательно готовлюсь");
+                break;
+            case 3:
+                alert("зависит от настроения");
+                break;
+            case 4:
+                alert("за 5мин до экзамена/контрольной читаю молитву");
+                break;
+        }
+        if(question4 == 3) {
+            result += 5
+        }
+        else if(question4 == 1) {
+            result -= 1
+        }
+        else if(question4 == null) {
+                    alert("пока")
+                    end         
+        }
+        else {
+            result += 1
+        }
+        question5 = prompt("финальный вопрос: лучшее чувство/ощущение? 1 - вкусно и ссытно кушать 2 - веселье на тусе у друзей 3 - чувство любови 4 - блаженство, когда код не работал, но спустя время нашёл ошибку и он заработал")
+        switch(question5) {
+            case 1:
+                alert("вкусно и ссытно кушать");
+                break;
+            case 2:
+                alert("веселье на тусе у друзей");
+                break;
+            case 3:
+                alert("чувство любови");
+                break;
+            case 4:
+                alert("блаженство, когда код не работал, но спустя время нашёл ошибку и он заработал");
+                break;     
+        }
+        if(question5 == 1) {
+            result += 8
+        }
+        else if(question5 == 4) {
+            result = result * 3
+        }
+        else if(question5 == null) {
+                    alert("пока")
+                    end         
+        }
+        else {
+            result += 15
+        }
+        if(result >= 15, result < 24) {
+            alert(`вы набрали ${result}! вы чем-то похожи`)
+        }
+        else if(result >= 25, result < 29) {
+            alert(`вы набрали ${result}! вы действительно похожи`)
+        }
+        else if(result >= 30, result == 60) {
+            alert(`вы набрали ${result}! вы как две капли воды`)
+        }
+        else if(result <= 14) {
+            alert(`вы набрали ${result}! вы совсем не похожи`)
+        }
+    </script>
+</body>
+</html>
